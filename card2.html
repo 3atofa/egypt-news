@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>
+  li {
+    font-size: 30px;
+    font-family: bold;
+  }
+  .navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+  }
+ .news{
+    width: 1000px;
+    padding-left: 10px;
+    padding-top: 40px;
+    align-items:right  ;
+ }
+ body{
+    background-color:whitesmoke;
+ }
+ .news> h2{
+    font-family:'Arial Bold', sans-serif;
+    font-size: 50px;
+ }
+ img{
+    justify-items: center;
+ }
+ p{
+    font-size: 24px;
+    
+ }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./newspaper-svgrepo-com.png" width="50px" alt="">  Egypt News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              content
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!-- news -->
+<div class="news">
+  <h2>  Russia: Egypt is welcome to join the BRICS group</h2>
+  <img src="./putin and sesei.jpg" width="100%" height="500px" alt="">
+<p>The Russian ambassador to Cairo, Georgy Borisenko, revealed that Russia supported Egypt's request to join the BRICS group, and the agreement remains within the bloc on the criteria and procedures for accepting new countries.</br>
+    The Russian ambassador to Cairo, Georgy Borisenko, said that Moscow is discussing with Cairo the issue of using Russian "Mir" bank cards in Egypt.<br>
+
+The ambassador said in an interview with "TASS" agency today, Wednesday: "The Russian side is insistently proposing to Egyptian friends to allow the use of "Mir" cards in Egypt, and this will be beneficial for Egypt itself because it is very interested in tourism, and the Russians constitute an essential and promising part of the tourist flow to Egypt. <br>
+
+He added that the use of "Mir" cards would help the country increase the number of Russian tourists who come to Egypt for entertainment and to visit tourist attractions.. Egyptian partners are still working on this issue.<br>
+
+The Russian ambassador stated that Egypt has begun to buy more wheat from Russia, not only wheat, but also sunflower oil and soybeans. In addition, negotiations on the establishment of a free trade area between the Eurasian Economic Union and Egypt have been continuing since 2019, and our negotiators in the Economic Committee hope That next year we can sign an agreement.
+
+.</p>
+</div>
+<script src="./js/bootstrap.min.js"></script> 
+</body>
+
+</html>

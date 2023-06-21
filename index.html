@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>
+  li {
+    font-size: 30px;
+    font-family: bold;
+  }
+  .navbar-brand{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+  }
+  .news-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    align-items: center;  
+    padding: 50px;
+    gap: 50px;
+  }
+  a{
+    text-decoration: none;
+  }
+  @media(max-width: 1000px){
+  .news-cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  }
+  @media(max-width: 700px){
+  .news-cards{
+    grid-template-columns: 1fr;
+  }
+  }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./newspaper-svgrepo-com.png" width="50px" alt="">  Egypt News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              content
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-- news card -->
+  <div class="news-cards">
+    <!-- card1 -->
+    <a href="./card1.html" >
+      <div class="card" style="width: 18rem;">
+        <img src="./64859224423604107c43de22.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">The arrival of "Al-Qahar"</h5>
+          <p class="card-text">The arrival of "Al-Qahar" frigate at the Alexandria base, marking it's joining to the Egyption naval force.</p>
+        </div>
+      </div>
+    </a>
+      <!--card2  -->
+    <a href="./card2.html">
+      <div class="card" style="width: 18rem;">
+        <img src="./putin and sesei.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Russia: Egypt is welcome to join the BRICS group
+          </h5>
+          <p class="card-text">The Russian ambassador to Cairo, Georgy Borisenko, revealed that Russia supported Egypt's request to join the BRICS group, and the agreement remains within the bloc on the criteria and procedures for accepting new countries.</p>
+        </div>
+      </div>
+    </a>
+    <!-- card 3 -->
+    <a href="./card3.html"> 
+      <div class="card" style="width: 18rem;">
+        <img src="./toww.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">"Does the Egyptian army send specific messages?"... Posting blurry pictures of information on the walls.</h5>
+          <p class="card-text">The Egyptian army published a group of photos of Lieutenant General Osama Askar, Chief of Staff of the Egyptian Armed Forces, during the implementation of the main phase of the "Victory 56" tactical project.
+
+            .</p>
+        </div>
+      </div>
+    </a> 
+    <!-- card4 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./flag.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">BBC employees strike in Egypt to protest "discrimination"</h5>
+        <p class="card-text">Journalists and employees of BBC Arabic Network in Egypt announced their complete strike, due to the lack of wages offered to them, in addition to not taking into account the details of the economic developments in the country.</p>
+      </div>
+    </div>
+    <!-- card 5 -->
+    <div class="card" style="width: 18rem;">
+      <img src="./plan.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Fear in Israel of Egypt, Saudi Arabia and the UAE acquiring nuclear weapons
+        </h5>
+        <p class="card-text">The Israeli media has expressed Tel Aviv's fears that Egypt, Saudi Arabia and the UAE will acquire nuclear weapons after Iran registered its nuclear weapons.</p>
+      </div>
+    </div>
+    <!-- card6  -->
+    <div class="card" style="width: 18rem;">
+      <img src="./rusegy.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Russia enters the agricultural field in Egypt and establishes a new factory</h5>
+        <p class="card-text">The Egyptian Minister of Agriculture, Mr. El-Koseir, announced his discussion with the Chairman of the Board of Directors of one of the important Russian companies working in the production of agricultural seeds and fertilizers, Sals Dvachi, about its entry into the Egyptian market..</p>
+        
+      </div>
+    </div>
+  </div>
+  <hr>
+
+  <div class="container">
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+      <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+          <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Egypt news </span>
+      </div>
+  
+      <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./icons8-facebook.gif" height="24" width="24"></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./icons8-instagram.gif" width="24" height="24"></svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="#"><img src="./icons8-twitter.gif" height="24" width="24"></svg></a></li>
+      </ul>
+    </footer>
+  </div>
+  <script src="./js/bootstrap.min.js"></script>
+</body>
+
+
+</html>

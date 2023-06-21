@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Components</title>
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<style>
+  li {
+    font-size: 30px;
+    font-family: bold;
+  }
+  .navbar-brand{
+    font-family: 'Arial  Bold', sans-serif;
+    font-size: 50px;
+  }
+ .news{
+    width: 1000px;
+    padding-left: 10px;
+    padding-top: 40px;
+    align-items:right  ;
+ }
+ body{
+    background-color:whitesmoke;
+ }
+ .news> h2{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+ }
+ img{
+    justify-items: center;
+ }
+ p{
+    font-size: 24px;
+    
+ }
+</style>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="./newspaper-svgrepo-com.png" width="50px" alt="">  Egypt News</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              content
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+</nav>
+<!-- news -->
+<div class="news">
+  <h2>  The arrival of "Al-Qahar" frigate</h2>
+  <img src="./64859224423604107c43de22.png" width="100%" height="500px" alt="">
+  <p>The Egyptian Armed Forces announced that it had received the second MEKO-A200 
+    frigate, which was built by the German company TKMS in the German SBN arsenal, 
+    marking its entry into service with the Egyptian Navy.<br>
+    Lieutenant General Ashraf Atwa, Commander of the Naval Forces, raised the Egyptian flag on the "Al-Qahar" frigate, which is the second out of four "MEKO-A200" frigates, which were contracted between Egypt and Germany, during a ceremony held in the German city of "Bremerhaven", in the presence of a number of commanders of the forces.<br>
+     The Egyptian and German navies, the Egyptian ambassador to Germany, the Egyptian military attaché in Germany, and a number of representatives of the German company "TKMS" that manufactured the "Al-Qahar" frigate.<br>
+    The Commander of the Egyptian Naval Forces, Ashraf Atwa, expressed his appreciation for the fruitful cooperation between the Egyptian and German navies, which comes within the framework of the development and modernization plan, which the Egyptian naval fleet is witnessing, to enhance security and stability in the areas of work of the navies and their economic waters, and to support the ability to face challenges and risks in the region.
+
+.</p>
+</div>
+<script src="./js/bootstrap.min.js"></script>
+</html>
